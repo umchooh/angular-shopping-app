@@ -1,0 +1,15 @@
+
+    <div class="productItem row">
+        <img [src]="productItem.imageSRC" alt="Image of {{productItem.name}}" width="100"/>
+        <div>Product Price: {{ productItem.price| currency:'CAD'}}</div>
+        <div>Product Name: {{ productItem.name }}</div>
+        <div>Description : {{productItem.description}}</div>
+        <div>Quantity :{{productItem.quantity}} </div>
+        <div class="wrapper">
+            <button [disabled]="value == 0" class="plusminus" (click)="handleMinus()">-</button>
+            <input type="number" class="num" value="0" [(ngModel)]="value" />
+            <button [disabled]="productItem.quantity == 0" class="plusminus" (click)="handlePlus()">+</button>
+            <button [disabled]="productItem.quantity == 0" class="plusminus" (click)="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+

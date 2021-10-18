@@ -1,0 +1,10 @@
+
+<div class="page-wrapper">
+  <div class="container">
+    <div>
+      <div class="row" *ngFor = "let product of productList">
+        <app-items [productItem]="product" ></app-items>
+      </div>
+    </div>
+  </div>
+</div>

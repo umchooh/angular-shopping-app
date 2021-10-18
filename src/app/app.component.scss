@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,900&display=swap');
+
+
+
+html {
+    box-sizing:border-box;
+    font-size: 16px;
+}
+*, *::before, *::after {
+  box-sizing:inherit;
+}
+.page-wrapper {
+    max-width:1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.hidden {
+    position: absolute;
+    left: -10000px;
+}
+body {
+    margin: auto 0;
+    font: normal 1em/1.2 'Open Sans', sans-serif;
+}
+
+h1,h2,h3 {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+}
+
+
+/*NAV*/
+.nav-container {
+    margin: 2em;
+}
+.btn {
+    background-color: Crimson;  
+    border-radius: 5px;
+    color: white;
+    padding: 1em;
+    text-decoration: none;
+}
